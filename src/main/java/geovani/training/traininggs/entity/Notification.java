@@ -26,21 +26,12 @@ public class Notification {
     public Notification() {
     }
 
-    public Notification(Long notificationId, LocalDateTime dateTime, String message, String destination, Channel channel, Status status) {
-        this.notificationId = notificationId;
+    public Notification(LocalDateTime dateTime, String message, String destination, Channel channel, Status status) {
         this.dateTime = dateTime;
         this.message = message;
         this.destination = destination;
         this.channel = channel;
         this.status = status;
-    }
-
-    public Long getNotificationId() {
-        return notificationId;
-    }
-
-    public void setNotificationId(Long notificationId) {
-        this.notificationId = notificationId;
     }
 
     public LocalDateTime getDateTime() {
